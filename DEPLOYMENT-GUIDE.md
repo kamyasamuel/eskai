@@ -15,16 +15,18 @@ eskai/
 ├── 📋 CONTRIBUTING.md         # Contribution guidelines
 ├── 📋 LICENSE                 # MIT License
 ├── 📋 requirements.txt        # Dependencies
-├── 📋 setup.py               # Package setup
-├── 📋 .env.example           # Environment template
-├── 📋 .gitignore             # Git ignore rules
-├── 🔧 eskai/                 # Main package
-│   ├── 🧠 core/              # 6-layer framework
-│   ├── 🤖 providers/         # AI provider integrations
-│   ├── 🛠️ utils/             # Configuration & logging
-│   └── 💻 cli/               # Command line interface
-├── 🧪 tests/                 # Comprehensive test suite
-└── 📚 examples/              # Usage examples
+├── 📋 pyproject.toml          # Modern PEP 517 package configuration
+├── 📋 setup.py.bak            # Legacy setup (backed up)
+├── 📋 .env.example            # Environment template
+├── 📋 .gitignore              # Git ignore rules
+├── 🔧 eskai/                  # Main package
+│   ├── 🧠 core/               # 6-layer framework
+│   ├── 🤖 providers/          # AI provider integrations
+│   ├── 🛠️ utils/              # Configuration & logging
+│   └── 💻 cli/                # Command line interface
+├── 🧪 tests/                  # Comprehensive test suite
+├── 📚 examples/               # Usage examples
+└── 📦 dist/                   # Built distributions (.whl, .tar.gz)
 ```
 
 ### ✅ 6-Layer AGI Architecture
@@ -37,17 +39,26 @@ eskai/
 
 ### ✅ Multi-Provider AI Integration
 - **OpenAI GPT-4** integration
-- **Groq** fast inference
+- **Groq** fast inference  
 - **Gemini** Google AI
 - Automatic failover and consensus
 
+### ✅ Modern Python Packaging
+- **PEP 517/518 Compliant**: Uses `pyproject.toml` for configuration
+- **No Deprecation Warnings**: Compatible with pip 25.3+
+- **Build System**: Modern setuptools>=64 with wheel support
+- **Development Tools**: Integrated Black, MyPy, pytest configuration
+- **Distribution Ready**: Builds both .whl and .tar.gz packages
+
 ### ✅ Advanced Features
 - Dynamic tool creation
-- Parallel agent execution
+- Parallel agent execution  
 - Comprehensive logging
 - Error handling & recovery
 - Security safeguards
 - Performance monitoring
+- **Modern PEP 517 packaging** (pyproject.toml)
+- **No deprecation warnings** in Python 3.9+
 
 ## 🚀 Quick Deployment to GitHub
 
@@ -56,7 +67,7 @@ eskai/
 cd /path/to/root
 git init
 git add .
-git commit -m "Initial commit: ESKAI AGI Framework v0.1.0"
+git commit -m "Initial commit: ESKAI AGI Framework v0.1.1"
 ```
 
 ### 2. Create GitHub Repository
@@ -80,15 +91,19 @@ cp .env.example .env
 
 ### 4. Install and Test
 ```bash
-# Install in development mode
+# Install in development mode (modern PEP 517 method)
 pip install -e .
+
+# Or build and install from wheel
+python -m build
+pip install dist/eskai-0.1.1-py3-none-any.whl
 
 # Run tests
 pytest
 
 # Try the CLI
 eskai --help
-eskai "Hello, how are you?"
+eskai process "Hello, how are you?"
 ```
 
 ## 🎯 Real-World Problem Categories ESKAI Can Solve

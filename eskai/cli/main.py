@@ -13,7 +13,7 @@ from ..utils.config import ESKAIConfig
 
 
 @click.group()
-@click.version_option(version="0.1.0")
+@click.version_option(version="0.1.1")
 def cli():
     """ESKAI - Evolved Strategic Knowledge and AI Framework"""
     pass
@@ -151,12 +151,12 @@ def display_result(result: dict):
 def show_help():
     """Show interactive mode help."""
     help_text = """
-Available commands:
-  help     - Show this help message
-  status   - Show ESKAI system status
-  exit     - Exit interactive mode
-  
-Just type your request to process it through ESKAI.
+        Available commands:
+        help     - Show this help message
+        status   - Show ESKAI system status
+        exit     - Exit interactive mode
+        
+        Just type your request to process it through ESKAI.
     """
     click.echo(help_text)
 
@@ -181,12 +181,12 @@ def init_config(output: str):
     config_template = """eskai:
   providers:
     openai:
-      model: "gpt-4"
+      model: "gpt-4.1-2025-04-14"
       temperature: 0.7
     groq:
-      model: "mixtral-8x7b-32768"
+      model: "qwen/qwen3-32b"
     gemini:
-      model: "gemini-pro"
+      model: "gemini-2.5-flash"
   
   execution:
     max_concurrent_agents: 3

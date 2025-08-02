@@ -12,9 +12,9 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 
 setup(
     name="eskai",
-    version="0.1.0",
+    version="0.1.1",
     author="ESKAI Team",
-    author_email="team@eskai.ai",
+    author_email="kamyasamuel@eskaen.com",
     description="Evolved Strategic Knowledge and AI Framework - A sophisticated multi-layered AGI framework",
     long_description=long_description,
     long_description_content_type="text/markdown",

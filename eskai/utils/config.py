@@ -6,7 +6,9 @@ import os
 import yaml
 from dataclasses import dataclass, field
 from typing import Dict, Any, Optional
+from dotenv import load_dotenv
 
+load_dotenv()  # Load environment variables from .env file
 
 @dataclass
 class ESKAIConfig:
@@ -20,9 +22,9 @@ class ESKAIConfig:
     gemini_api_key: str = field(default_factory=lambda: os.getenv("GEMINI_API_KEY", ""))
     
     # Provider Settings
-    openai_model: str = "gpt-4"
-    groq_model: str = "mixtral-8x7b-32768"
-    gemini_model: str = "gemini-pro"
+    openai_model: str = "gpt-4o-mini"
+    groq_model: str = "qwen/qwen3-32b"
+    gemini_model: str = "gemini-2.5-pro"
     temperature: float = 0.7
     
     # Execution Settings

@@ -4,9 +4,9 @@ ESKAI - Evolved Strategic Knowledge and AI Framework
 A sophisticated multi-layered AGI framework for complex problem-solving.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = "ESKAI Team"
-__email__ = "team@eskai.ai"
+__email__ = "kamyasamuel@eskaen.com"
 __license__ = "MIT"
 
 from .core.eskai_main import ESKAI

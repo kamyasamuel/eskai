@@ -15,7 +15,7 @@ class GroqClient:
     Groq API client for ESKAI framework.
     """
     
-    def __init__(self, api_key: str, model: str = "mixtral-8x7b-32768", temperature: float = 0.7):
+    def __init__(self, api_key: str, model: str = "qwen/qwen3-32b", temperature: float = 0.7):
         self.api_key = os.getenv("GROQ_API_KEY")
         self.model = model
         self.temperature = temperature

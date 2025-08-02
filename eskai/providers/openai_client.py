@@ -12,7 +12,7 @@ class OpenAIClient:
     OpenAI API client for ESKAI framework.
     """
     
-    def __init__(self, api_key: str, model: str = "gpt-4", temperature: float = 0.7):
+    def __init__(self, api_key: str, model: str = "gpt-4o-mini", temperature: float = 0.7):
         self.api_key = api_key
         self.model = model
         self.temperature = temperature
