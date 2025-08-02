@@ -144,7 +144,6 @@ class PromptAssessor:
                 if provider:
                     result = provider.generate_response(
                         assessment_prompt,
-                        max_tokens=200,
                         temperature=0.1  # Low temperature for consistent classification
                     )
                     

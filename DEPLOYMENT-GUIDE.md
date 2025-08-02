@@ -53,7 +53,7 @@ eskai/
 
 ### 1. Initialize Git Repository
 ```bash
-cd /home/kamya-samuel/Projects/eskai
+cd /path/to/root
 git init
 git add .
 git commit -m "Initial commit: ESKAI AGI Framework v0.1.0"
@@ -62,7 +62,7 @@ git commit -m "Initial commit: ESKAI AGI Framework v0.1.0"
 ### 2. Create GitHub Repository
 ```bash
 # Create a new repo on GitHub, then:
-git remote add origin https://github.com/yourusername/eskai.git
+git remote add origin https://github.com/kamyasamuel/eskai.git
 git branch -M main
 git push -u origin main
 ```
