@@ -43,7 +43,7 @@ pytest
 ## 📋 How to Contribute
 
 ### 1. Find or Create an Issue
-- Check existing [issues](https://github.com/yourusername/eskai/issues)
+- Check existing [issues](https://github.com/kamyasamuel/eskai/issues)
 - Create a new issue for bugs or feature requests
 - Comment on issues you'd like to work on
 
@@ -267,9 +267,9 @@ Contributors will be:
 
 ## 📞 Getting Help
 
-- **Questions:** Open a [discussion](https://github.com/yourusername/eskai/discussions)
+- **Questions:** Open a [discussion](https://github.com/kamyasamuel/eskai/discussions)
 - **Chat:** Join our [Discord server](https://discord.gg/eskai)
-- **Issues:** Use [GitHub Issues](https://github.com/yourusername/eskai/issues)
+- **Issues:** Use [GitHub Issues](https://github.com/kamyasamuel/eskai/issues)
 
 ## 📋 Code of Conduct
 
