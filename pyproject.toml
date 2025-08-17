@@ -67,9 +67,10 @@ web = [
 [project.scripts]
 eskai = "eskai.cli.main:cli"
 
-[tool.setuptools]
-packages = ["eskai", "eskai.cli", "eskai.core", "eskai.providers", "eskai.utils"]
-include-package-data = true
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["eskai*"]
+namespaces = false
 
 [tool.setuptools.package-data]
 eskai = ["py.typed"]

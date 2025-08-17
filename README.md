@@ -248,7 +248,7 @@ eskai:
     groq:
       model: "mixtral-8x7b-32768"
     gemini:
-      model: "gemini-pro"
+      model: "gemini-2.5-flash"
   
   execution:
     max_concurrent_agents: 3
@@ -305,8 +305,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - 📧 Email: support@eskai.ai
 - 💬 Discord: [ESKAI Community](https://discord.gg/eskai)
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/eskai/issues)
-- 📖 Documentation: [Full Documentation](https://docs.eskai.ai)
+- 🐛 Issues: [GitHub Issues](https://github.com/kamyasamuel/eskai/issues)
+- 📖 Documentation: [Full Documentation](https://docs.eskaen.com)
 
 ## 🗺️ Roadmap
 
