@@ -50,7 +50,7 @@ ESKAI is a sophisticated multi-layered AGI (Artificial General Intelligence) fra
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/yourusername/eskai.git
+git clone https://github.com/kamyasamuel/eskai.git
 cd eskai
 ```
 
